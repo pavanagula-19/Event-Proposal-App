@@ -146,12 +146,12 @@ export function CreateProposal({ setCreate, onAdd, onUpdate, edit, onEdit }) {
                                     setError(ex => ({ ...ex, eventType: "" }));
                                     }}>
                                     <option value={"Select"} >Select</option>
-                                    <option value={"BIRTHDAY"} >BIRTHDAY</option>
-                                    <option value={"WEDDING"} >WEDDING</option>
-                                    <option value={"RECEPTION"} >RECEPTION</option>
-                                    <option value={"ANNIVERSARY"} >ANNIVERSARY</option>
-                                    <option value={"BABY SHOWER"}>BABY SHOWER</option>
-                                    <option value={"Product launch"} >Product launch</option>
+                                    <option value={"birthday"} >birthday</option>
+                                    <option value={"wedding"} >wedding</option>
+                                    <option value={"reception"} >reception</option>
+                                    <option value={"anniversary"} >anniversary</option>
+                                    <option value={"babyshower"}>babyshower</option>
+                                    <option value={"ProductLaunch"} >Product launch</option>
                                 </select>
                             </div>
                             <div className="type">

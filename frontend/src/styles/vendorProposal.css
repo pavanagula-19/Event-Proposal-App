@@ -66,7 +66,7 @@
 
 .vendor-proposals-container #vendors-header .right-section ul {
     position: absolute;
-    background-color: #4E94F4;
+    background-color:grey;
     padding: 10px;
     color: white;
     top: 50px;
@@ -128,6 +128,21 @@
     border-top: 4px solid #4E94F4;
     border-radius: 50%;
     animation: proLoader 2s infinite linear;
+}
+.Eventtype1{
+    border: 1px solid yellow;
+    background-color: #AAAAAA;
+    color: #081838;
+}
+.proposaltype1{
+    border: 1px solid yellow;
+    background-color: #AAAAAA;
+    color: #081838;
+}
+.budget1{
+    border: 1px solid yellow;
+    background-color: #AAAAAA;
+    color: #081838;
 }
 
 @keyframes proLoader {

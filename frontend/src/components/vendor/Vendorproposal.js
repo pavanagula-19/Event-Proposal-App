@@ -57,15 +57,75 @@ export function VendorProposals() {
     getProposals();
   }, []);
 
+  ///change onfilter code
   function onFilter(key, val) {
-    let inp = { ...filters, [key]: val };
-    const result = proposalFilter(inp, original);
-    if (!result) setProposals(original);
-    else {
-      if(result.length === 0) setResultText("No result found...");
-      setProposals(result);
+    let updatedFilters = { ...filters, [key]: val };
+    setFilters(updatedFilters);
+  
+    const filteredProposals = proposalFilter(updatedFilters, original);
+    if (filteredProposals.length === 0) {
+      setResultText("No result found...");
     }
+    setProposals(filteredProposals);
   }
+  ///to here
+  function proposalFilter(filters, proposals) {
+    let filteredProposals = [...proposals];
+  
+    // Filter by event type
+    if (filters.birthday) {
+      filteredProposals = filteredProposals.filter(proposal => proposal.eventType === "birthday");
+    }
+    if (filters.wedding) {
+      filteredProposals = filteredProposals.filter(proposal => proposal.eventType === "wedding");
+    }
+    if (filters.reception) {
+      filteredProposals = filteredProposals.filter(proposal => proposal.eventType === "reception");
+    }
+    if (filters.anniversary) {
+      filteredProposals = filteredProposals.filter(proposal => proposal.eventType === "anniversary");
+    }
+    if (filters.babyshower) {
+      filteredProposals = filteredProposals.filter(proposal => proposal.eventType === "babyshower");
+    }
+    if (filters.productLaunch) {
+      filteredProposals = filteredProposals.filter(proposal => proposal.eventType === "productLaunch");
+    }
+  
+    // Filter by proposal type
+    if (filters.formal) {
+      filteredProposals = filteredProposals.filter(proposal => proposal.proposalType === "Formal");
+    }
+    if (filters.inFormal) {
+      filteredProposals = filteredProposals.filter(proposal => proposal.proposalType === "In-Formal");
+    }
+    if (filters.internal) {
+      filteredProposals = filteredProposals.filter(proposal => proposal.proposalType === "Internal");
+    }
+    if (filters.external) {
+      filteredProposals = filteredProposals.filter(proposal => proposal.proposalType === "External");
+    }
+  
+    // Filter by budget range
+    if (filters["0-25000"]) {
+      filteredProposals = filteredProposals.filter(proposal => proposal.budget >= 0 && proposal.budget <= 25000);
+    }
+    if (filters["25001-50000"]) {
+      filteredProposals = filteredProposals.filter(proposal => proposal.budget >= 25001 && proposal.budget <= 50000);
+    }
+    if (filters["50001-75000"]) {
+      filteredProposals = filteredProposals.filter(proposal => proposal.budget >= 50001 && proposal.budget <= 75000);
+    }
+    if (filters["75001-100000"]) {
+      filteredProposals = filteredProposals.filter(proposal => proposal.budget >= 75001 && proposal.budget <= 100000);
+    }
+    if (filters["> 100000"]) {
+      filteredProposals = filteredProposals.filter(proposal => proposal.budget > 100000);
+    }
+  
+    return filteredProposals;
+  }///add this
+  
 
   function searchBar(val) {
     setSearchQuery(val);
@@ -99,20 +159,20 @@ export function VendorProposals() {
             <img src={filter} />
           </div>
           {showfilters && <ul>
-            <li>Event-Type</li>
-            <li>
-              <input type="checkbox" id="weddingFilter" checked={filters.wedding} onChange={(e) => {
-                setFilters(ex => ({ ...ex, wedding: e.target.checked }));
-                onFilter("wedding", e.target.checked);
-              }} />
-              <label htmlFor="weddingFilter">Wedding</label>
-            </li>
+            <li className="Eventtype1"> Event-Type</li>
             <li>
               <input type="checkbox" id="birthdayFilter" checked={filters.birthday} onChange={(e) => {
                 setFilters(ex => ({ ...ex, birthday: e.target.checked }));
                 onFilter("birthday", e.target.checked);
               }} />
-              <label htmlFor="birthdayFilter">Birthday</label>
+              <label htmlFor="birthdayFilter">birthday</label>
+            </li>
+            <li>
+              <input type="checkbox" id="weddingFilter" checked={filters.wedding} onChange={(e) => {
+                setFilters(ex => ({ ...ex, wedding: e.target.checked }));
+                onFilter("wedding", e.target.checked);
+              }} />
+              <label htmlFor="weddingFilter">wedding</label>
             </li>
             <li>
               <input type="checkbox" id="receptionFilter" checked={filters.reception} onChange={(e) => {
@@ -122,18 +182,18 @@ export function VendorProposals() {
               <label htmlFor="receptionFilter">Reception</label>
             </li>
             <li>
-              <input type="checkbox" id="charityFilter" checked={filters.charity} onChange={(e) => {
-                setFilters(ex => ({ ...ex, charity: e.target.checked }));
-                onFilter("charity", e.target.checked);
+              <input type="checkbox" id="anniversaryFilter" checked={filters.anniversary} onChange={(e) => {
+                setFilters(ex => ({ ...ex, anniversary: e.target.checked }));
+                onFilter("anniversary", e.target.checked);
               }} />
-              <label htmlFor="charityFilter">Charity</label>
+              <label htmlFor="anniversaryFilter">anniversary</label>
             </li>
             <li>
-              <input type="checkbox" id="partyFilter" checked={filters.party} onChange={(e) => {
-                setFilters(ex => ({ ...ex, party: e.target.checked }));
-                onFilter("party", e.target.checked);
+              <input type="checkbox" id="babyshowerFilter" checked={filters.babyshower} onChange={(e) => {
+                setFilters(ex => ({ ...ex, babyshower: e.target.checked }));
+                onFilter("babyshower", e.target.checked);
               }} />
-              <label htmlFor="partyFilter">Party</label>
+              <label htmlFor="babyshowerFilter">babyshower</label>
             </li>
             <li>
               <input type="checkbox" id="productLaunchFilter" checked={filters.productLaunch} onChange={(e) => {
@@ -142,7 +202,7 @@ export function VendorProposals() {
               }} />
               <label htmlFor="productLaunchFilter">Product launch</label>
             </li>
-            <li>Proposal-Type</li>
+            <li className="proposaltype1">Proposal-Type</li>
             <li>
               <input type="checkbox" id="formalFilter" checked={filters.formal} onChange={(e) => {
                 setFilters(ex => ({ ...ex, formal: e.target.checked }));
@@ -171,7 +231,7 @@ export function VendorProposals() {
               }} />
               <label htmlFor="externalFilter">External</label>
             </li>
-            <li>Budget</li>
+            <li className="budget1">Budget</li>
             <li>
               <input type="checkbox" id="0-25000Filter" checked={filters["0-25000"]} onChange={(e) => {
                 setFilters(ex => ({ ...ex, ["0-25000"]: e.target.checked }));
