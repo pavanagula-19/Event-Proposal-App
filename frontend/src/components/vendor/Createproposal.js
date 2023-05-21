@@ -213,3 +213,5 @@ export function CreateProposal({ setCreate, onAdd, onUpdate, edit, onEdit }) {
         </div>
     </>
 }
+
+
