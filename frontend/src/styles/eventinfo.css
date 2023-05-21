@@ -1,0 +1,119 @@
+.card1 {
+    left: 69px;
+    width: 350px;
+    height: 470px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 4px;
+    opacity: 1;
+  }
+  .card2 {
+    width: 350px;
+    height: 399px;
+  }
+  
+  .proposal-btn {
+    width: 97px;
+    height: 34px;
+    background: white;
+    border: 1px solid #0078dd;
+    border-radius: 4px;
+  
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .proposal-text {
+    width: 56px;
+    height: 26px;
+    text-align: center;
+    font: normal normal 600 16px/26px Open Sans;
+    letter-spacing: 0.19px;
+    color: #006bd9;
+  }
+  .contacts {
+    width: 380px;
+    min-height: 210px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    opacity: 1;
+    margin: 20px 10px 0px 10px;
+  }
+  /* .foodPrefernces{
+      top: 185px;
+  width: 400px;
+  height: 496px;
+  /* UI Properties 
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  opacity: 1;
+  background-color: blue;
+  }
+  .events{
+      top: 716px;
+  width: 400px;
+  height: 304px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  opacity: 1;
+  } */
+  .eventPage {
+    display: flex;
+    margin: 0px 200px 75px 75px;
+  }
+  .col1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px 15px 75px;
+  }
+  
+  .col1-proposal {
+    top: 143px;
+    left: 69px;
+    width: 96px;
+    height: 23px;
+    text-align: left;
+    font: normal normal normal 17px/28px Open Sans;
+    letter-spacing: 0px;
+    color: #1a1a1a;
+    opacity: 1;
+  }
+  
+  .col1-contract {
+    top: 140px;
+    left: 173px;
+    width: 138px;
+    height: 28px;
+    text-align: left;
+    font: normal normal 600 21px/28px Open Sans;
+    letter-spacing: 0px;
+    color: #1a1a1a;
+    opacity: 1;
+  }
+
+  .btn {
+    top: 138px;
+    left: 1751px;
+    width: 97px;
+    height: 34px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #0078dd;
+    border-radius: 4px;
+    opacity: 1;
+    margin-right: 75px;
+    cursor: pointer;
+  }
+  .btn-text {
+    top: 142px;
+    left: 1771px;
+    width: 56px;
+    height: 26px;
+    text-align: center;
+    font: normal normal 600 19px/26px Open Sans;
+    letter-spacing: 0.19px;
+    color: #006bd9;
+    opacity: 1;
+  }

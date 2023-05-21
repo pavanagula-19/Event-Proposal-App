@@ -1,0 +1,41 @@
+.venue-title{
+    margin: 10px 0px 10px 10px;
+        left: 540px;
+        width: 100%;
+        height: 26px;
+        text-align: left;
+        font: normal normal 600 19px Open Sans;
+        color: #1E2022;
+    }
+    
+    .venue-text{
+      height: 40px;
+      margin-bottom: 20px;
+      text-align: left;
+      font: normal normal normal 12px/20px Open Sans;
+      letter-spacing: 0px;
+      color: #767676;
+      opacity: 1;
+      padding: 10px;
+    }
+    .venue{
+        top: 185px;
+    left: 519px;
+    width: 380px;
+    height: 470px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EDEDED;
+    border-radius: 4px;
+    opacity: 1;
+    margin: 0px 10px 0px 10px;
+    }
+    .events-list{
+        width: 380px;
+        min-height: 210px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #EDEDED;
+        border-radius: 4px;
+        opacity: 1;
+        margin-top: 20px;
+      
+    }

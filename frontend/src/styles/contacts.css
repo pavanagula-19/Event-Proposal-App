@@ -1,0 +1,64 @@
+.con-text{
+    text-align: left;
+    font: normal normal 600 19px/65px Open Sans;
+    letter-spacing: 0px;
+    color: #1E2022;
+    opacity: 1;
+    padding: 10px;
+}
+.contact{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    margin: 0px 0px 0px 10px;
+}
+.con-list{
+display: flex;
+justify-content: center;
+
+
+}
+.con-name{
+    width: 71px;
+    height: 27px;
+    text-align: center;
+    font: normal normal 600 15px/6px Open Sans;
+    letter-spacing: 0px;
+    color: #1E2022;
+    opacity: 0.7;
+    margin: 0 auto;
+
+}
+.con-text{
+    padding-left: 20px;
+
+}
+.con-num{
+   
+    width: 112px;
+    height: 23px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal normal 13px/6px Open Sans;
+    letter-spacing: 0px;
+    color: #1E2022;
+    opacity: 0.7;
+}
+/* .con-img{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+} */
+.con-img1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin:auto;
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+ background-color: blue;
+}

@@ -1,0 +1,126 @@
+.card1-item{
+    left: 147px;
+    width: 350px;
+    height: 470px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 8px;
+    opacity: 1;
+    
+    
+    }
+    .card1-body{
+        padding-left: 15px;
+    }
+    
+    .card1-img{
+        height: 173px;
+        width: 350px;
+        object-fit:fill;
+        border-radius: 8px 8px 0px 0px;
+    }
+    .card1-id{
+    top: 394px;
+    left: 69px;
+    height: 25px;
+    background: #EAEAEA 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000003;
+    border-radius: 0px 3px 0px 0px;
+    opacity: 0.57;
+    
+    }
+    .spanid{
+        left: 87px;
+        width: 65px;
+        height: 23px;
+        text-align: left;
+        letter-spacing: 0px;
+        color: #1E2022;
+        opacity: 1;
+        margin-left: 15px;
+    }
+    .card1-name{
+        left: 148px;
+        width: 126px;
+        height: 16px;
+        text-align: left;
+        font: normal normal 600 19px/50px Open Sans;
+        letter-spacing: 0px;
+        color: #1E2022;
+        opacity: 1;
+    }
+    .namespan{
+    left: 87px;
+    width: 39px;
+    height: 19px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 14px/5px Open Sans;
+    letter-spacing: 0px;
+    color: #767676;
+    opacity: 1;
+    }
+    .emailspan{
+    
+    left: 87px;
+    width: 33px;
+    height: 18px;
+    text-align: left;
+    font: normal normal normal 13px/50px Open Sans;
+    letter-spacing: 0px;
+    color: #767676;
+    opacity: 1;
+    }
+    .card1-email{
+    
+    left: 148px;
+    width: 194px;
+    height: 22px;
+    text-align: left;
+    font: normal normal 600 16px/25px Open Sans;
+    letter-spacing: 0px;
+    color: #1E2022;
+    opacity: 1;
+    }
+    .card1-dates{
+        display: flex;
+        justify-content: space-between;
+    }
+    .Datespan{
+    
+    left: 90px;
+    width: 69px;
+    height: 19px;
+    text-align: left;
+    font: normal normal normal 14px/50px Open Sans;
+    letter-spacing: 0px;
+    color: #767676;
+    opacity: 1;
+    }
+    .card1-date{
+    left: 370px;
+    width: 98px;
+    height: 23px;
+    text-align: left;
+    font: normal normal 600 17px/25px Open Sans;
+    letter-spacing: 0px;
+    color: #1E2022;
+    opacity: 1;
+    margin-right: 10px;
+    }
+    .card1-events{
+        display: flex;
+        justify-content: space-between;
+    }
+    .card1-eventype{
+    left: 87px;
+    width: 100px;
+    height: 31px;
+    background: #D9ECFF 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+    text-align: center;
+    color: #006BD9;
+    font : normal normal normal 600 17px/25px open sans
+    }

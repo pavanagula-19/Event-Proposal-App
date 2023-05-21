@@ -1,0 +1,63 @@
+.card-item{
+    top: 393px;
+left: 147px;
+width: 250px;
+height: 273px;
+/* UI Properties */
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 8px;
+opacity: 1;
+margin: 20px 20px  0px 0px;
+
+}
+
+.card-img{
+    height: 173px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 8px 8px 0px 0px;
+    margin: inherit;
+}
+.card-name{
+    top: 576px;
+    left: 162px;
+    width: 333px;
+    height: 27px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal 600 20px/27px Open Sans;
+    letter-spacing: 0px;
+    color: #575A5D;
+    opacity: 1;
+    margin-left: 10px;
+}
+.card-price{
+    top: 602px;
+left: 162px;
+width: 166px;
+height: 22px;
+/* UI Properties */
+text-align: left;
+font: normal normal 600 16px/22px Open Sans;
+letter-spacing: 0.64px;
+color: #575A5D;
+opacity: 1;
+margin-left: 10px;
+}
+.card-location{
+    top: 629px;
+left: 162px;
+width: 76px;
+height: 22px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 16px/22px Open Sans;
+letter-spacing: 0px;
+color: #575A5D;
+opacity: 1;
+margin-left: 10px;
+}
+.carditemss{
+    display: flex;
+}

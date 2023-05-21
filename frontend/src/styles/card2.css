@@ -1,0 +1,26 @@
+.card2-img{
+    width: 100px;
+    height: 80px;
+    /* UI Properties */
+    border-radius: 2px;
+    opacity: 1;
+object-fit: fill;
+margin-bottom: 10px;
+}
+.card2-albums{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.card2-text{
+left: 76px;
+width: 122px;
+height: 30px;
+text-align: left;
+font: normal normal 600 22px Open Sans;
+letter-spacing: 0px;
+color: #1E2022;
+opacity: 1;
+margin: 10px;
+}
