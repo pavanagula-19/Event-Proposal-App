@@ -57,7 +57,6 @@ export default function LoginForm({ setIsLog, setIsreset }) {
             })
             .catch(res => alert(res.message))
     }
-
     return (
         <>
             <div className="signin-form-container">
