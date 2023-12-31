@@ -1,8 +1,4 @@
 {
-  "name": "your-app-name",
-  "version": "1.0.0",
-  "description": "Your application description",
-  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
     "build": "npm i && npm build",
