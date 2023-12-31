@@ -1,4 +1,21 @@
 {
+  "name": "your-app-name",
+  "version": "1.0.0",
+  "description": "Your application description",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "build": "npm i && npm build",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongodb",
+    "deployment"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "cloudinary": "^1.37.0",
